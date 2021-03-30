@@ -1,0 +1,17 @@
+.navigation-logo-link {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.navigation-logo-studio-nav {
+  color: var(--navigation-logo-studio-color);
+}
+.navigation-logo-studio-footer {
+  color: var(--navigation-logo-studio-footer);
+}
+.navigation-item .navigation-logo-link {
+  margin-right: 96px;
+}
