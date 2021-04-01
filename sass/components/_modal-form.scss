@@ -32,11 +32,10 @@
   border-radius: 4px;
   padding-left: 42px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-form-input-wrapper {
@@ -53,10 +52,9 @@
   fill: var(--body-font-color);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
+  .modal-form-input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-form-message {
@@ -68,17 +66,16 @@
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-top: 4px;
-}
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    color: rgba(117, 117, 117, 0.5);
+  }
 
-.modal-form-message::placeholder {
-  font-size: 14px;
-  line-height: 1.14;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-form-check-desc {
@@ -91,6 +88,30 @@
   letter-spacing: 0.03em;
   color: var(--portfolio-cards-description-color);
   justify-content: center;
+  &::before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/Vector.svg);
+    cursor: pointer;
+    margin-right: 7px;
+    border-radius: 2px;
+  }
+  .modal-form-term:focus + &::before {
+    background-image: radial-gradient(
+      circle at center,
+      rgba(33, 150, 243, 0.1),
+      rgba(33, 150, 243, 0.7)
+    );
+  }
+
+  .modal-form-term:checked + &::before {
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    background-image: url(../images/icon-check.svg);
+    background-position: center;
+  }
 }
 .contract {
   font-family: Roboto;
@@ -100,32 +121,6 @@
   text-decoration-line: underline;
   color: var(--accent-operating);
 }
-
-.modal-form-check-desc::before {
-  display: block;
-  content: '';
-  width: 16px;
-  height: 15px;
-  background-image: url(../images/Vector.svg);
-  cursor: pointer;
-  margin-right: 7px;
-  border-radius: 2px;
-}
-.modal-form-term:focus + .modal-form-check-desc::before {
-  background-image: radial-gradient(
-    circle at center,
-    rgba(33, 150, 243, 0.1),
-    rgba(33, 150, 243, 0.7)
-  );
-}
-
-.modal-form-term:checked + .modal-form-check-desc::before {
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  background-image: url(../images/icon-check.svg);
-  background-position: center;
-}
-
 .modal-form-btn {
   font-family: var(--main-font);
   font-weight: 700;

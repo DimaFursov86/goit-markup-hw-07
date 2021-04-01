@@ -10,16 +10,17 @@
 }
 .join-container {
   margin-left: 70px;
+
+  & > .social-list {
+    margin: 0px;
+  }
 }
-.join-container > .social-list {
-  margin: 0px;
-}
-.social-list-item > .footer-social-link-color {
+.footer-social-link-color {
   background-color: var(--footer-join-link-color);
   fill: var(--navigation-logo-studio-footer);
-}
-.social-list-item > .footer-social-link-color:hover,
-.social-list-item > .footer-social-link-color:focus {
-  background-color: var(--accent-color);
-  fill: var(--navigation-logo-studio-footer);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--navigation-logo-studio-footer);
+  }
 }

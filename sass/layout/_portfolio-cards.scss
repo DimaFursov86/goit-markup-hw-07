@@ -8,6 +8,15 @@
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  & > .link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
 }
 .portfolio-cards-wraper {
   border: 1px solid #eeeeee;
@@ -17,15 +26,6 @@
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-}
-.portfolio-cards-item > .link {
-  display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-cards-item > .link:hover,
-.portfolio-cards-item > .link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-cards-title {
   font-weight: 700;
@@ -61,8 +61,8 @@
   letter-spacing: 0.03em;
   padding: 63px 23px 63px 23px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-cards-link-wraper:hover .overlay,
-.portfolio-cards-link-wraper:focus .overlay {
-  transform: translateY(0%);
+  .portfolio-cards-link-wraper:hover &,
+  .portfolio-cards-link-wraper:focus & {
+    transform: translateY(0%);
+  }
 }
