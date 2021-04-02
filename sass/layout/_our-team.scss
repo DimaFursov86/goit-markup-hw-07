@@ -3,14 +3,14 @@
   padding-bottom: 94px;
   background-color: var(--backgroud-body-studio);
 }
-.our-team-list {
+.our-team-section__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.our-team-item {
+.our-team-section__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -21,12 +21,12 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.our-team-div {
+.our-team-section__wraper {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.our-team-names {
+.our-team-section__names {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -34,7 +34,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
-.our-team-job {
+.our-team-section__job {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;

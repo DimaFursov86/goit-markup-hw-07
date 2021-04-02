@@ -2,20 +2,20 @@
   padding-top: 110px;
   padding-bottom: 94px;
 }
-.dignity-list {
+.dignity-section__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.dignity-list-item {
+.dignity-section__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
   height: 251px;
 }
-.icon-dignity-size {
+.dignity-section__icon-size {
   height: 120px;
   margin-bottom: 30px;
   background: var(--backgroud-body-studio);
@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
 }
-.dignity-list-title {
+.dignity-section__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -32,7 +32,7 @@
   text-transform: uppercase;
   margin-bottom: 17px;
 }
-.dignity-description {
+.dignity-section__description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

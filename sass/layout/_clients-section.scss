@@ -2,13 +2,13 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.clients-list {
+.clients-section__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
-.clients-item {
+.clients-section__item {
   flex-basis: calc(100% / 6 - 30px);
   margin-left: 30px;
   margin-top: 30px;
@@ -20,7 +20,7 @@
     border-color: var(--accent-color);
   }
 }
-.clients-link {
+.clients-section__link {
   display: flex;
   justify-content: center;
   align-items: center;

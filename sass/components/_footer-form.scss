@@ -1,14 +1,11 @@
-.form-wraper {
-  margin-left: 93px;
-}
-.subscribe {
+.footer-form__subscribe {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--navigation-logo-studio-footer);
 }
-.form-position {
+.footer-form {
   margin-left: 93px;
 }
 .form-subscribe-wraper {
@@ -18,7 +15,7 @@
   margin-top: 20px;
 }
 
-.subscribe-form-input {
+.form-subscribe-wraper__input {
   width: 358px;
   height: 50px;
   font-size: 16px;
@@ -45,7 +42,7 @@
   }
 }
 
-.subscribe-form-btn {
+.form-subscribe-wraper__btn {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
@@ -65,7 +62,7 @@
   border-radius: 4px;
   padding: 10px 29px;
 }
-.form-send-icon {
+.form-subscribe-wraper__icon {
   position: absolute;
   right: 29px;
   bottom: 10px;

@@ -1,4 +1,4 @@
-.join {
+.join-container__subscribe {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
@@ -15,7 +15,7 @@
     margin: 0px;
   }
 }
-.footer-social-link-color {
+.join-container__color {
   background-color: var(--footer-join-link-color);
   fill: var(--navigation-logo-studio-footer);
   &:hover,

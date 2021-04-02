@@ -1,16 +1,16 @@
 .footer-adress-wraper {
   width: 231px;
 }
-.footer-logo-margin {
+.footer-adress-wraper__logo-margin {
   display: block;
   margin-bottom: 20px;
 }
-.footer-list-item {
+.footer-adress-wraper__item {
   &:not(:last-child) {
     margin-bottom: 6px;
   }
 }
-.address-google-maps {
+.footer-adress-wraper__google-maps {
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;
@@ -18,7 +18,7 @@
   color: var(--navigation-logo-studio-footer);
 }
 
-.footer-mail-tel-link {
+.footer-adress-wraper__mail-tel-link {
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.71;

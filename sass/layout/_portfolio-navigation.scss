@@ -1,14 +1,14 @@
-.navigation-on-page-and-cards-section {
+.navigation-portfolio-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.navigation-on-page-list {
+.navigation-portfolio-section__list {
   display: flex;
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 50px;
 }
-.navigation-onpage-item {
+.navigation-portfolio-section__item {
   &:not(:last-child) {
     margin-right: 8px;
   }
